@@ -4,11 +4,13 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Noto Sans', sans-serif;
-    font-weight: 400;
+    
 }
 .nav-bar{
     display: none;
 }
+
+
 
 nav{
     width: 100%;
@@ -18,11 +20,14 @@ nav{
     height: 64px;
     padding: 10px 10px 0 10px;
     background: rgba(red, green, blue,0.9);
+    position: fixed;
+    z-index: 1;
+    top:0;
 }
 
 .logo{
     height: 56px;
-    margin: 10px 0 0 20px;
+    margin: 0 0 0 20px;
 }
 
 .hamicon{
@@ -105,6 +110,137 @@ a{
     top: 10px;
 }
 
+.hero-img{
+    width: 100%;
+    height: 500px;
+    background:url(assets/hero-page/hero_bg.png) ;
+    background-size: cover;
+    background-position: center;
+}
+
+.destination{
+    padding: 10px 10px;
+}
+
+.destination h1{
+   color: rgb(3, 2, 42);
+   font-weight:900;
+    font-size: 22px;
+    text-align: center;
+    padding-top: 20px;
+
+   
+}
+
+
+.dest-cards{
+   width:  100%;
+   display: grid;
+   grid-auto-flow:column ;
+   justify-content: space-around;
+   padding: 10px;
+   overflow:scroll;
+   scroll-behavior: smooth;
+}
+
+.btns{
+   display: none;
+}
+.card{
+   width: 275px;
+   background: white;
+   margin: 20px 20px 0 0;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   
+}
+
+.dest-img{
+   width: 250px;
+   border-radius: 10px 10px 0 0;
+   margin: auto;
+}
+
+.destination i{
+   font-size: 20px;
+   color: orange;
+   margin-right: 5px;
+}
+
+.details{
+   margin: 10px 0;
+   padding: 0 10px 0 0;
+   display: flex;
+   justify-content: space-between;
+   color: orange;
+   font-size: 12px;
+}
+
+span{
+   font-size: 20px;
+   color: orange;
+   margin: 5px;
+
+}
+.card p{
+   padding-right: 10px;
+   color: grey;
+   font-size: 14px;
+}
+
+.company{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 30px 30px 10px;
+    gap: 50px;
+}
+
+.company img{
+    width: 80%;
+}
+
+.stats{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.company-txt{
+    margin: 0 15px;
+    width: 100%;
+    text-align: center;
+    color:grey;
+    text-align: center;
+}
+
+.company-txt h1{
+    margin: 20px 0;
+    color: rgb(3, 2, 42);
+}
+
+
+.company span{
+    font-size: 18px;
+    color: orange;
+    font-weight:900;
+    margin: 5px 10px 5px 5px;
+}
+
+.stats p{
+    font-size: 10px;
+    width: 56px;
+    text-overflow: clip;
+    margin: 0 10px;
+}
+
+
+
+
+
+
 
 
 
@@ -122,6 +258,10 @@ a{
         align-items: center;
         padding: 10px 80px;
         height: fit-content;
+        background: rgba(255, 255, 255, 0.1);
+    }
+    a{
+        color: white;
     }
 
     .logo{
@@ -150,10 +290,163 @@ a{
         background: orange;
         color: white;
      }
+     .destination{
+         padding: 20px 80px;
+     }
+
+     .destination h1{
+        color: rgb(3, 2, 42);
+        font-weight:900;
+        font-size: 32px;
+        margin: 20px 0 0 40px;
+        text-align: left;
+
+        
+     }
+
+
+     .dest-cards{
+        width:  100%;
+        display: grid;
+        grid-auto-flow:column ;
+        justify-content: space-around;
+        padding: 20px 80px;
+        overflow: hidden;
+        scroll-behavior: smooth;
+    }
+
+    .btns{
+        display: flex;
+        width: fit-content;
+        justify-content: center;
+        position: absolute;
+        bottom: 50px;
+        right: 70px;
+    }
+
+  
+
+    .btns button{
+        width: 40px;
+        height: 40px;
+        background:orange   ;
+        color: white;
+        border: none;
+        border-radius: 30px;
+        margin: 0 10px;
+        cursor: pointer;
+   }
+
+
+    .card{
+        width: 275px;
+        background: white;
+        margin: 20px 20px 0 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        
+    }
+
+    .dest-img{
+        width: 250px;
+        border-radius: 10px 10px 0 0;
+        margin: auto;
+    }
+
+    i{
+        font-size: 20px;
+        color: orange;
+        margin-right: 5px;
+    }
+
+    .details{
+        margin: 10px 0;
+        padding: 0 10px 0 0;
+        display: flex;
+        justify-content: space-between;
+        color: orange;
+        font-size: 12px;
+    }
+
+    span{
+        font-size: 20px;
+        color: orange;
+        margin: 5px;
+
+    }
+    .card p{
+        padding-right: 10px;
+        color: grey;
+        font-size: 14px;
+    }
+
+    .card:hover {
+        transform: scale(1.1);
+        transition: 0.5s ease-in-out;
+        
+    }
+
+    .company{
+        flex-direction: row;
+        padding: 10px 10px;
+        margin: 50px 0 0 150px;
+    }
+
+    .company img{
+        width: 25%;
+    }
+
+    .company-txt{
+        margin: 0 20px;
+        width: 50%;
+        text-align: left;
+    }
+
+    .company h1{
+        font-size: 32px;
+        color: rgb(3, 2, 42);
+        font-weight: 900;
+        margin: 10px 0 30px 0;
+    }
+
+    .company p{
+        font-size: 16px;
+        color: grey;
+        margin: 10px 0;
+        
+    }
+
+    .stats{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .company span{
+        font-size: 28px;
+        color: orange;
+        font-weight:900;
+        margin: 5px 10px 5px 5px;
+    }
+
+    .stats p{
+        font-size: 16px;
+        width: 56px;
+        text-overflow: clip;
+        margin: 0 10px;
+    }
+
+    
 
 
 
 
 
     
+}
+
+.scrolled{
+    background: rgba(255, 255, 255);
+    transition: 0.5s;
 }
