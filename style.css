@@ -237,57 +237,44 @@ span{
     margin: 0 10px;
 }
 
+
+
+
+
+.services-container{
+    flex-direction: column;
+}
+
 .offers{
-    display: flex;
-    justify-content: space-around;
+    flex-direction: column;
     align-items: center;
-    padding: 20px 10px;
+    padding:  20px 10px 0 10px;
     background: rgba(255, 165,0);
-    height: 350px;
-    margin-top: 100px;
+    
 }
 
 .offers-text{
-    width: 40%;
-    display: flex;
-    height: fit-content;
-    flex-direction: column;
-    justify-content: center;
-    align-items: end;
-    text-align: center;
-    background: hsl(41, 100%, 70%);
-    padding: 50px;
-    border-radius: 30px;
-}
-
-.offers-text h1{
-    color: rgb(3, 2, 42);
-    font-weight:900;
-    font-size: 24px;
-    margin: 0 40px 10px 40px;
+    background: rgb(255, 207, 102);
+    padding: 30px 30px;
+    border-radius: 15px;
     text-align: center;
 
-    .offers-text p{
-        color: grey;
+    p{
+        color:black;
         font-size: 16px;
-        margin: 10px 40px;
-        text-align: center;
     }
 }
 
+
 .offers img{
-    width: 25%;
-    border-radius: 30px;
-    margin-bottom: 100px;
+    width: 60%;
+    margin:30px 0 0 40px;
+    
 }
 
 .services-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 350px;
+
     margin-top: 50px;
-    padding: 0 100px;
 }
 
 .service-card{
@@ -296,20 +283,170 @@ span{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: 0 10px;
+    margin: 0 10px 20px 10px;
+}
+
+.services-card {
+    width: 50%;
+
+}
+
+.booking{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: orange;
+    padding: 10px 50px;
+}
+
+.booking form{
+    width: 300px;
+    display: grid;
+    gap: 10px 30px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    background:rgb(255, 207, 102);
+    padding: 30px 20px;
     border-radius: 30px;
 }
 
-.service-card img{
-    width: 100%;
-    border-radius: 30px;
-}
-
-.service-card p{
-    color: grey;
+form p{
     font-size: 16px;
-    margin: 20px 10px 0 10px;
+    font-weight: 900;
+    margin: 10px 0;
+
 }
+
+.booking img{
+    width:100%;
+    position: relative;
+    top: 20px;
+    left: 30px;
+    margin-right: 50px;
+}
+
+.booking input{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+}
+
+
+form button{
+    width: 100%;
+    padding: 10px;
+    background: orange;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.package-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 10px;
+    margin-top: 50px;
+}
+
+.package-card{
+    width: 275px;
+    margin-bottom: 30px;
+    border: 2px solid orange;
+    border-radius: 30px;
+    padding-bottom: 30px;
+}
+
+.package-card img{
+    width: 100%;
+    border-radius: 30px 30px 0 0;
+}
+
+.package-card p{
+    margin: 10px 0 10px 10px;
+}
+
+.package-card h1{
+    margin-left: 10px;
+}
+
+
+.package-card i{
+    color: orange;
+    margin-right: 5px;
+}
+
+.rev-container{
+    display: flex;
+   flex-direction: column;
+    padding: 20px 10px;
+    margin-top: 50px;
+}
+
+.rev-card{
+    border: 2px solid orange;
+    width: 300px;
+    display: flex;
+    padding: 20px 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px ;
+    margin-bottom: 30px;
+}
+
+.rev-card p{
+    width: 80%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.foot-container{
+    display: flex;
+    flex-direction: column;
+    background-color: #232F3E;
+}
+
+.foot-container img{
+    width: 84px;
+    margin: 20px 0 0 20px;
+}
+
+
+.foot-container div{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+
+}
+
+.foot-container div ul li{
+    list-style: none;
+    margin: 10px;
+    color: white;
+    opacity: 0.7;
+}
+
+.rights{
+    width: 100%;
+    text-align: center;
+    color: gray;
+}
+
+hr{
+    margin-top: 20px;
+    border: 1px solid orange;
+    width: 80%;
+    margin-left: 15%;
+}
+
+
+
 
 
 
@@ -429,11 +566,7 @@ span{
         margin: auto;
     }
 
-    i{
-        font-size: 20px;
-        color: orange;
-        margin-right: 5px;
-    }
+    
 
     .details{
         margin: 10px 0;
@@ -445,7 +578,7 @@ span{
     }
 
     span{
-        font-size: 20px;
+        font-size: 30px;
         color: orange;
         margin: 5px;
 
@@ -512,6 +645,205 @@ span{
         margin: 0 10px;
     }
 
+    .offers{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row;
+        padding: 20px 10px;
+        background: rgba(255, 165,0);
+        height: 350px;
+        margin-top: 180px;
+    }
+
+    .offers img{
+        width: 26%;
+        margin-bottom: 180px;
+    }
+    
+    .offers-text{
+        width: 40%;
+        display: flex;
+        height: fit-content;
+        flex-direction: column;
+        justify-content: center;
+        align-items: end;
+        text-align: center;
+        
+        padding: 50px;
+        border-radius: 30px;
+    }
+    
+    .offers-text h1{
+        color: rgb(3, 2, 42);
+        font-weight:900;
+        font-size: 24px;
+        margin: 0 40px 10px 40px;
+        text-align: center;
+    
+        .offers-text p{
+            color: grey;
+            font-size: 16px;
+            margin: 10px 40px;
+            text-align: center;
+        }
+    }
+     
+    .services-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        height: 350px;
+        margin-top: 100px;
+        padding: 0 100px;
+    }
+    
+    .service-card{
+        width: 350px;
+        background: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 0 10px;
+        border-radius: 30px;
+    }
+    
+    .service-card img{
+        width: 100%;
+        border-radius: 30px;
+    }
+    
+    .service-card p{
+        color: grey;
+        font-size: 16px;
+        margin: 20px 10px 0 10px;
+    }
+
+    .booking{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        background-color: orange;
+        padding: 20px 50px;
+    }
+    
+    .booking form{
+        width: 50%;
+        display: grid;
+        gap: 10px 30px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        background:rgb(255, 207, 102);
+        padding: 30px 20px;
+        border-radius: 30px;
+    }
+    
+    form p{
+        font-size: 16px;
+        font-weight: 900;
+        margin: 10px 0;
+    
+    }
+    
+    .booking img{
+        width: 50%;
+        position: relative;
+        top: 60px;
+        left: 30px;
+        margin-right: 10px;
+    }
+    
+    .booking input{
+        width: 100%;
+        padding: 10px;
+        border: none;
+        border-radius: 10px;
+    }
+    
+    
+    form button{
+        width: 100%;
+        padding: 10px;
+        background: orange;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin:10px 0 0 55%;
+    }
+
+    .packages{
+        margin-top: 100px;
+    }
+
+    .package-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        padding: 20px 10px;
+        gap:20px 0;
+    }
+    
+    .package-card {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        margin-right: 20px;
+        box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+        border-radius: 30px;
+    }
+     .package-card img
+    {
+        width: 100%;
+        border-radius: 30px 30px 0 0;
+    }
+
+    .package-card h1{
+        margin: 10px 0 0 10px;
+        font-weight: 900;
+    }
+
+    .package-card p{
+        margin:10px 0 10px 10px;
+    }
+
+    .package-card p:last-of-type{
+        margin-bottom: 10px;
+    }
+
+    .rev-container{
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .reviews h1{
+        margin:50px 0 0 50px;
+        font-size: 36px;
+    }
+
+    .rev-card{
+        width: 350px;
+    }
+
+    .foot-container div{
+        padding: 20px 20px 0 40px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+
+
+
+    .foot-container div ul:last-of-type i{
+        margin-right: 10px;
+    }
+
+ 
+
+
+
     
 
 
@@ -536,4 +868,10 @@ span{
     a{
         color:black;
     }
+}
+
+i{
+    font-size: 20px;
+    color: orange;
+    margin-right: 5px;
 }
