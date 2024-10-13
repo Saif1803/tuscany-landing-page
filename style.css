@@ -555,7 +555,20 @@ hr{
         align-items: center;
         list-style: none;
      }
+      
 
+     .hero-img h1{
+        font-size: 84px;
+        margin-bottom: 10px;
+        font-family: 'Qwitcher Grypen', cursive;
+        font-weight: 700;
+        text-align: center;
+     }
+
+     .hero-img p{
+        font-size: 18px;
+        font-weight: 700;
+     }
      .hero-comp{
         width: 80%;
         background: white;
