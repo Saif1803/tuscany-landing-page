@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@400;700&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -8,6 +10,10 @@
 }
 .nav-bar{
     display: none;
+}
+
+i{
+    color: orange;
 }
 
 
@@ -117,6 +123,63 @@ a{
     background:url(assets/hero-page/hero_bg.png) ;
     background-size: cover;
     background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color:white;
+
+}
+
+.hero-img h1{
+    font-size: 48px;
+    margin-bottom: 10px;
+    font-family: 'Qwitcher Grypen', cursive;
+    font-weight: 700;
+    text-align: center;
+}
+
+.hero-img p{
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.hero-comp{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    background: white;
+    color: #000;
+    margin: 10px;
+    width: 250px;
+    padding:10px 0 10px 30px ;
+    border-radius:10px;
+    input{
+        width: 90%;
+        border: 1px solid orange;
+        padding: 10px 0 10px 10px;
+        border-radius: 10px;
+    }
+
+    button{
+        background: orange;
+        border: none;
+        border-radius: 10px;
+        padding: 10px;
+        cursor: pointer;
+        width: 90px;
+        height: 90%;
+        margin: 10px 5px 0 0;
+
+        
+
+        i{
+            color: white;
+            ;
+        }
+    }
+
 }
 
 .destination{
@@ -242,7 +305,10 @@ span{
 
 
 .services-container{
+    display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .offers{
@@ -488,6 +554,52 @@ hr{
         justify-content: space-around;
         align-items: center;
         list-style: none;
+     }
+
+     .hero-comp{
+        width: 80%;
+        background: white;
+        height: 80px;
+        color: #000;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        
+        border-radius:10px;
+        margin-top: 50px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+         button{
+            background: orange;
+            border: none;
+            border-radius: 10px;
+            padding: 10px;
+            cursor: pointer;
+            width: 90px;
+            height: 90%;
+            margin: 10px 5px 10px 0;
+
+            i{
+                color: white;
+                ;
+            }
+        }
+     }
+
+     .hero-comp div{
+        width: 25%;
+        padding: 10px;
+
+        i{
+            margin: 5px 5px 0 0;
+        }
+
+     }
+
+     .hero-comp div input{
+        width: 80%;
+        border: none;
+        padding: 10px 0 10px 10px;
      }
 
      .options{
@@ -853,6 +965,8 @@ hr{
     
 }
 
+
+
 .scrolled{
     background: rgb(255, 165, 0);
     transition: 0.5s;
@@ -861,7 +975,7 @@ hr{
         color: orange;
     }
 
-    .hamicon{
+    i{
         color: white;
     }
 
@@ -870,8 +984,6 @@ hr{
     }
 }
 
-i{
-    font-size: 20px;
-    color: orange;
-    margin-right: 5px;
-}
+
+
+

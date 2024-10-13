@@ -1,3 +1,4 @@
+//hamburger menu
 const hamMenu = document.querySelector(".hammenu");
 const hamIcon = document.querySelector(".hamicon");
 const closeIcon = document.querySelector(".closeicon");
@@ -9,6 +10,7 @@ closeIcon.addEventListener("click", () => {
   hamMenu.classList.toggle("hidden");
 });
 
+//navbar scroll effect
 window.addEventListener("scroll", () => {
   let scroll = window.scrollY;
   let navbar = document.querySelector(".nav-bar");
@@ -23,6 +25,7 @@ window.addEventListener("scroll", () => {
   }
 });
 
+//carousel for the destinations
 const carousel = document.querySelector(".carousel");
 const right = document.querySelector(".right");
 const left = document.querySelector(".left");
