@@ -4,6 +4,7 @@
 - almost cloned the design file given
 - did only the home page
 - added carousel section
+- hamburger menu for mobile screens
 - added the navigation bar scroll effect
 
 ## tech Stack
